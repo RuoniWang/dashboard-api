@@ -15,6 +15,7 @@
  };
  const cleanPosts = (posts) => {
    return posts.map((post) => {
+     console.log(post.tags);
      return { id: post._id, title: post.title, tags: post.tags, cover_url: post.cover_url };
    });
  };
@@ -39,6 +40,7 @@
      if (req.body.tags) { post.tags = req.body.tags; }
      if (req.body.content) { post.content = req.body.content; }
      if (req.body.cover_url) { post.cover_url = req.body.cover_url; }
+     if (req.body.comments) { console.log(req.body.comments); post.comments = req.body.comments; }
      post.save().then((result) => {
        res.json(result);
      })
