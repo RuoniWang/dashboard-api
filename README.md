@@ -12,7 +12,7 @@ A couple sentence description about what you did:
   
 What worked / didn’t work
 - For better user experience, visitor(those who are not signed in) will not be able to enter editing state onClick(onClick will not be able to toggle the display state of these fields), as opposed to just allowing them to edit but but not persisting the edits in database.
-- Comparing post.author with user.id sometimes involving comparing different objects, hence toString() method instead. 
+- Comparing post.author with user.id sometimes involving comparing different objects, hence toString() method is used. 
 - Experienced callback hell in user controller functions, esp since findOne() returns three possible options (err, null, object). Used promises elsewhere which is a lot clearer.
 - req.user prepared by the jwtlogin middleware comes handy in upgrading authorization.
 
