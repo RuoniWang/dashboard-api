@@ -11,7 +11,7 @@ A couple sentence description about what you did:
   I added authentication to my blog application by following these steps: create user model in mongodb, add some server side routes for api request related to user signin and signup, created jwtLogin and Locallogin authentication options using passport, apply them as appropriate when routing to controller functions, encode password with salt and hash(with a secret key set up as env variable) in signin method; then in the client side, I added new action types, store states, and a wrapper component (requireAuth), components to deliver appropriate views and access/editing options according to authentication state. I stored token in localstorage of the browser, and send in the header of every api request so that the authenticated user can be identified by the server. 
   
 What worked / didn’t work
-- For better user experience, visitor(those who are not signed in) will not be able to enter editing state onClick(onClick will not trigger toggle action), as opposed to just allowing them to edit but but not persisting the edits in database.
+- For better user experience, visitor(those who are not signed in) will not be able to enter editing state onClick(onClick will not be able to toggle the display state of these fields), as opposed to just allowing them to edit but but not persisting the edits in database.
 - Comparing post.author with user.id sometimes involving comparing different objects, hence toString() method instead. 
 - Experienced callback hell in user controller functions, esp since findOne() returns three possible options (err, null, object). Used promises elsewhere which is a lot clearer.
 - req.user prepared by the jwtlogin middleware comes handy in upgrading authorization.
