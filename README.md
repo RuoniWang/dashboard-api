@@ -6,6 +6,7 @@
 
 Procfile set up to run on [heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs#deploy-the-app)
 
+# README for grading
 
 A couple sentence description about what you did:
   I added authentication to my blog application by following these steps: create user model in mongodb, add some server side routes for api request related to user signin and signup, created jwtLogin and Locallogin authentication options using passport, apply them as appropriate when routing to controller functions, encode password with salt and hash(with a secret key set up as env variable) in signin method; then in the client side, I added new action types, store states, and a wrapper component (requireAuth), components to deliver appropriate views and access/editing options according to authentication state. I stored token in localstorage of the browser, and send in the header of every api request so that the authenticated user can be identified by the server. 
