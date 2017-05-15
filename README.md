@@ -18,7 +18,7 @@ What worked / didn’t work
 
 
 Any extra credit attempted
-1. Error handling: during sign in and sign up, if the input is invalid or user is not authenticated, the user will receive notice. This is done by adding a error message state in store, change error reducer and error action to allow error message to be updated, and a error component which will show up when there is err message. 
+1. Error handling: during sign in and sign up, if the input is invalid or user is not authenticated, the user will receive corresponding notice. This is done by adding a error message state in store, change error reducer and error action to allow error message to be updated, and a error component which will show up when there is err message. 
 2. Extend the permissions system so that users can only edit their own posts. While they can't edit other people's posts in the four main fields, they are allowed to comment on other people's post. 
 3. I added the user profile page(accessible by clicking user icon after logging in). This page displays username, password and only the posts that this particular user created. They can also enter post editing page by clicking the post on their profile page. If we are not in authenticated state, this url will be directed to the sign in page (requireAuth applied to this page). 
 
