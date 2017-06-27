@@ -1,0 +1,38 @@
+[
+  {
+    "name":"Pulse",
+    "description": "College Pulse is a mobile application and website designed to aggregate and share student public opinion on college campuses. Combining the accessibility and relevancy of social apps like Yik Yak with the accuracy and credibility of surveys conducted by Institutional Research, Pulse is the first reliable, transparent and cost-effective platform for college administrators and students alike to gage campus opinion through polls. As of August 2016, the Pulse team began testing the platform at Dartmouth and plans to conduct its first campus-wide poll in September. We would like to thank the following Dartmouth and national organizations for all of their funding and support: Dartmouth Entrepreneurial Network, Dali Lab, the Office of the President, Student Assembly, Dartmouth Roots, the Student and Presidential Committee on Sexual Assault, and the Stamps Foundation. After rolling out the platform at Dartmouth, Pulse plans to expand to neighboring ivy league schools, beginning with Yale, Harvard and Brown."
+    "cover_url":"images/pulse.png"
+  },
+  {
+    "name": "Grafficity",
+    "description":"In conjunction with the Hood, DALI is working with Peyman Khorsand to use augmented reality to display art and information on buildings. The art, information, graffiti, etc. will be viewable through the app and phone cameras.",
+    "cover_url":"images/Grafficity.jpg"
+  },
+  {
+    "name": "BASIIC",
+    "description":"Visualize complex software systems and build a user-centered interface that will simplify the building, managing, testing, and sharing of code.",
+    "cover_url":"images/basic.jpg"
+  },
+  {
+    "name": "Seabird",
+    "description":"Seabird Apps, like the Dartmouth Student App, organizes important information and resources all in one space. Partners Sean Cann ‘17 and Tyler Fisher ‘17 want to create Seabird as a cross-platform app that is easily changed to suit the needs of other schools. They also hope to improve the current app design.",
+    "cover_url":"images/seabird.png"
+  },
+  {
+    "name": "PsychVR",
+    "description":"A set of experiments and tools using virtual reality to help treat stress from long duration space flight. This VSS Project is being funded by a grant from the NSBRI (National Space and Biomedical Research Institute, a division of NASA). Users are able to  experience immersive relaxing situations using virtual reality, sound, heat and other sensory stimulations.
+Partners: Dr. Jay Buckey (Geisel), Dr. Mark Hegel (Geisel), Lorie Loeb",
+    "cover_url":"images/psychVR.jpg"
+  },
+  {
+    "name": "Life You Can Lead",
+    "description":"All-around winner of The Pitch, The Life You Can Lead Game is the brainchild of James Drain ‘17 who is the founder of Dartmouth’s Effective Altruism Club. DALI is working to create a prototype of the game, which will promote and expose players to effective altruism (a movement that uses evidence and analysis to find the best causes to work on and donate to).",
+    "cover_url":"images/life-you-can-lead.png"
+  },
+  {
+    "name": "Clearpay Healthcare",
+    "description":"Partner David Washer MBA/MPH ‘17 won the Pitch Audience Choice Award for his solution to crippling, unpredictable health care costs. The DALI Lab is partnering with Washer and working with DHMC to develop an app that provides patients with a more transparent view of healthcare costs by allowing patients to look up costs for health care services before they schedule an appointment.",
+    "cover_url":""
+  }
+]

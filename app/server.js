@@ -7,7 +7,7 @@ import apiRouter from './router';
 
 
 // DB Setup
-const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost/blog';
+const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost/dali-dashboard';
 mongoose.connect(mongoURI);
 // set mongoose promises to es6 default
 mongoose.Promise = global.Promise;
