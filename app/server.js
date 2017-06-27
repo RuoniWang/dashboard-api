@@ -4,13 +4,17 @@ import cors from 'cors';
 import path from 'path';
 import mongoose from 'mongoose';
 import apiRouter from './router';
-
+import dataTools from './data/initialize';
 
 // DB Setup
 const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost/dali-dashboard';
 mongoose.connect(mongoURI);
 // set mongoose promises to es6 default
 mongoose.Promise = global.Promise;
+
+// check if data is loaded
+dataTools.loadData();
+
 // initialize
 const app = express();
 
