@@ -13,7 +13,7 @@ mongoose.connect(mongoURI);
 mongoose.Promise = global.Promise;
 
 // check if data is loaded
-dataTools.loadData();
+dataTools.checkToLoadData();
 
 // initialize
 const app = express();
