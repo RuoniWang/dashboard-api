@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import * as Projects from './controllers/project_controller';
 import * as People from './controllers/person_controller';
-
+import dataTools from './data/initialize';
 
 const router = Router();
 
@@ -13,15 +13,15 @@ router.get('/', (req, res) => {
 // get all projects
 router.route('/projects').get(Projects.getAll);
 // get one project
-router.route('/project/:id').get(Projects.getOne);
-// add one project
-router.route('/addproject').post(Projects.createProject);
+router.route('/project').get(Projects.getOne);
 
 // get all members
 router.route('/members').get(People.getAll);
 // get some group of members
 router.route('/project_member').get(People.getSome);
-// add one member
-router.route('/add_member', Projects.addMember);
+router.route('/member').get(People.getOne);
+
+
+router.route('/data/reload').get(dataTools.reload);
 
 export default router;

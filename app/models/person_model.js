@@ -7,6 +7,7 @@ const PersonSchema = new Schema({
   url: String,
   message: String,
   lat_long: Array,
+  terms_on: Array,
   projects: Array,
 }, {
   toJSON: {

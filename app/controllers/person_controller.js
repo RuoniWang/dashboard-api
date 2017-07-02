@@ -24,10 +24,24 @@ export const getAll = (req, res) => {
   });
 };
 
+export const getOne = (req, res) => {
+  Person.findOne({ _id: req.query._id }).then((result) => {
+    console.log(result);
+    res.json(result);
+  },
+).catch((err) => {
+  res.status(500).json({ err });
+});
+};
+
 // get the group of students doing a particular project
 export const getSome = (req, res) => {
-  Person.find({ project: req.body.projects }).then((result) => {
-    res.json(result);
+  Person.find({ projects: req.query.project }).then((results) => {
+    const info = results.map((result) => {
+      return { name: result.name, _id: result.id, iconUrl: result.iconUrl };
+    });
+
+    res.json(info);
   },
 ).catch((error) => {
   res.status(500).json({ error });

@@ -15,18 +15,21 @@ export const createProject = (req, res) => {
    });
 };
 
-// add the details of a particular project
+// get the details of a particular project
 export const getOne = (req, res) => {
-  Project.findOne({ name: req.body._id }).then((result) => {
+  Project.findOne({ _id: req.query._id }).then((result) => {
     res.json(result);
   }).catch((error) => {
     res.status(500).json({ error });
   });
 };
-
+// just return name and id
 export const getAll = (req, res) => {
-  Project.find().then((result) => {
-    res.json(result);
+  Project.find().then((results) => {
+    const nameAndId = results.map((result) => {
+      return { name: result.name, _id: result.id };
+    });
+    res.json(nameAndId);
   }).catch((error) => {
     res.status(500).json({ error });
   });

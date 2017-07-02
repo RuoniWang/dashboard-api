@@ -9,10 +9,10 @@ const Status = mongoose.model('Status', {
 });
 
 function reload(req, res) {
-  if (req.query.key === 'reload') {
-    loadData();
-    res.json({ error: null, message: 'Reload success' });
-  }
+  // if (req.query.key === 'reload') {
+  loadData();
+  res.json({ error: null, message: 'Reload success' });
+  // }
 }
 
 /**
@@ -64,7 +64,8 @@ function loadPeople() {
       p.url = person.url;
       p.message = person.message;
       p.lat_long = person.lat_long;
-      p.projects = person.projects;
+      p.projects = person.project;
+      p.terms_on = person.terms_on;
       return p.save();
     });
     Promise.all(savePromises).then((success) => {
