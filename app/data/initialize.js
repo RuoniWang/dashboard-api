@@ -41,7 +41,7 @@ function checkToLoadData() {
 
 function loadData() {
   Project.remove({}, (err) => {
-    const projects = require('./projects.json');
+    const projects = require('../../static/projects.json');
     const savePromises = projects.map((project) => {
       const p = new Project();
       p.name = project.name;
@@ -56,7 +56,7 @@ function loadData() {
 
 function loadPeople() {
   Person.remove({}, (err) => {
-    const people = require('./people.json');
+    const people = require('../../static/people.json');
     const savePromises = people.map((person) => {
       const p = new Person();
       p.name = person.name;
