@@ -26,7 +26,6 @@ export const getAll = (req, res) => {
 
 export const getOne = (req, res) => {
   Person.findOne({ _id: req.query._id }).then((result) => {
-    console.log(result);
     res.json(result);
   },
 ).catch((err) => {
